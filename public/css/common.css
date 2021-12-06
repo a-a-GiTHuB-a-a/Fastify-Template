@@ -1,0 +1,16 @@
+/*change font*/
+html, body, button {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 12pt;
+}
+/*add pointer cursor to clickables*/
+a, button {
+	cursor: pointer;
+}
+/*make the a tag look responsive*/
+a {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
