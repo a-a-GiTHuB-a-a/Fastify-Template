@@ -40,8 +40,7 @@ fastify.register(pointOfView, {
 	engine: {
 		ejs
 	}
-});
-fastify.after(() => {
+}).after(() => {
 	fastify.decorateReply("render", function(path, locals = {}) {
 		return this.view(`views/${path}.ejs`, locals);
 	});
