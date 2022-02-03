@@ -1,3 +1,3 @@
 $(function() {
-  $("body").append("<br/>this is extra text");
+	$("body").append("<br/>this is extra text");
 });

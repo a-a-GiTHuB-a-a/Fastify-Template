@@ -18,7 +18,7 @@ module.exports = function plugins({fastify}) {
 		global: true
 	});
 	fastify.register(require("fastify-static"), {
-		root: `${__dirname}/public`,
+		root: `${__dirname}/../public`,
 		prefix: "/static/"
 	});
 	fastify.register(require("point-of-view"), {
@@ -26,7 +26,7 @@ module.exports = function plugins({fastify}) {
 			ejs: require("ejs")
 		},
 		includeViewExtension: true,
-		root: `${__dirname}/views`,
+		root: `${__dirname}/../views`,
 		layout: "./layouts/main",
 		propertyName: "render"
 	});

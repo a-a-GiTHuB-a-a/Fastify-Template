@@ -1,8 +1,8 @@
 {
   "name": "fastify-template",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "A Fastify template, what else?",
-  "main": "index.js",
+  "main": "src/index.js",
   "dependencies": {
     "ejs": "latest",
     "fastify": "latest",
@@ -11,9 +11,15 @@
     "fastify-static": "latest",
     "point-of-view": "latest"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "eslint": ">=8.8.0"
+  },
   "scripts": {
-    "start": "node index.js"
+    "lint-main": "eslint ./src",
+    "lint-browser": "eslint --env browser,es2021,jquery ./public/js",
+    "lint": "npm run lint-main && npm run lint-browser",
+    "test": "npm run lint",
+    "start": "node src/index.js"
   },
   "author": "rchoubey",
   "license": "ISC"
