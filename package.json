@@ -1,6 +1,6 @@
 {
   "name": "fastify-template",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "A Fastify template, what else?",
   "main": "src/index.js",
   "dependencies": {
@@ -22,5 +22,10 @@
     "start": "node src/index.js"
   },
   "author": "rchoubey",
-  "license": "ISC"
+  "license": "ISC",
+  "keywords": [
+    "fastify"
+  ],
+  "repository": "github:a-a-GiTHuB-a-a/Fastify-Template",
+  "homepage": "https://replit.com/@RahulChoubey1/Fastify-Template#README.md"
 }
