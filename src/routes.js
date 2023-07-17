@@ -1,7 +1,7 @@
 module.exports = function routes({fastify}) {
 	fastify.get("/", async (req, res) => {
 		return res.render("index", {
-			title: "Sample Fastify Page"
+			title: "Sample Fastify Page",
 		});
 	});
 	fastify.get("/error", async (req, res) => {
@@ -10,7 +10,7 @@ module.exports = function routes({fastify}) {
 
 	fastify.setNotFoundHandler(async (req, res) => {
 		return res.status(404).render("404", {
-			title: "Sample Fastify 404 Page"
+			title: "Sample Fastify 404 Page",
 		});
 	});
 
